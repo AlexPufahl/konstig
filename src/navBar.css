@@ -1,0 +1,42 @@
+/* Navbar */
+.navBar {
+  display: flex;
+  margin-left: 15rem;
+  margin-top: 8rem;
+}
+/* Logo */
+.navBar__logo {
+  color: var(--color-black);
+  font-size: var(--fs-logo);
+  font-weight: var(--fw-logo);
+  text-decoration: none;
+}
+/* Logo active */
+.navBar__logo:active {
+  color: var(--color-yellow);
+}
+/* List */
+.navBar__list {
+  display: flex;
+  align-items: center;
+}
+/* Item */
+.navBar__items {
+  list-style: none;
+  padding: 0 6.8rem;
+}
+/* Links */
+.navBar__links {
+  color: var(--color-black);
+  font-size: var(--fs-navBar-link);
+  font-weight: var(--fw-navBar-link);
+  text-decoration: none;
+}
+/* Links hover */
+.navBar__links:hover {
+  color: var(--color-gray);
+}
+/* Links active */
+.navBar__links:active {
+  color: var(--color-yellow);
+}
