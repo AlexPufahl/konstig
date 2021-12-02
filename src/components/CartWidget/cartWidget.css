@@ -1,0 +1,8 @@
+.cart__link {
+  display: flex;
+  vertical-align: middle;
+  margin-left: 3.2rem;
+}
+.cart__image {
+  width: 3.2rem;
+}

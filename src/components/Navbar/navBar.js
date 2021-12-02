@@ -1,6 +1,7 @@
-import './_resets.css'
-import './_variables.css'
+import '../../css/_resets.css';
+import '../../css/_variables.css';
 import './navBar.css';
+import CartWidget from '../CartWidget/cartWidget';
 
 function Navbar() {
   
@@ -21,6 +22,8 @@ function Navbar() {
         <li className="navBar__items"><a href="#" className='navBar__links'>Shop</a></li>
         <li className="navBar__items"><a href="#" className='navBar__links'>About Us</a></li>
       </ul>
+      {/* CartWidget */}
+      <CartWidget />
     </nav>
   );
 }
