@@ -1,10 +1,27 @@
+import { useState } from 'react/cjs/react.development';
+import { useEffect } from 'react';
 import './itemListContainer.css';
+import {getFetch} from '../../data/coins.js';
+import Spinner from '../Spinner/spinner';
+import ItemList from '../ItemList/itemList';
 
-function ItemListContainer ({greeting}) {
+function ItemListContainer () {
+    const [coin,setCoin] = useState([])
+    const [loading,setLoading] = useState(true)
+
+    useEffect(
+        ()=> {
+            getFetch
+            .then(dataRes => setCoin(dataRes))
+            .catch(err => console.log(err))
+            .finally(()=> setLoading(false))
+        }, []
+    )
+    
     return (
-        <div className="itemListContainer__container">
-            <h1 className="itemListContainer__title">{greeting}</h1>
-        </div>
+        <section className="itemListContainer">
+            {loading ? <Spinner/> : <ItemList coin={coin} />}
+        </section>
     )
 }
 

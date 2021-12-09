@@ -4,5 +4,5 @@
   margin-left: 3.2rem;
 }
 .cart__image {
-  width: 3.2rem;
+  width: var(--fs-navBar-link);
 }

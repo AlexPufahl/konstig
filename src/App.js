@@ -8,7 +8,7 @@ function App () {
     return (
         <>
             <Navbar />
-            <ItemListContainer greeting='Este mensaje llega desde App'/>
+            <ItemListContainer/>
             <ItemCount stock={itemStock} initial={initialValue} />
         </>
     )

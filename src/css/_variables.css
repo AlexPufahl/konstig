@@ -7,11 +7,17 @@
 }
 /* Font size */
 :root {
-  --fs-logo: 6.4rem;
-  --fs-navBar-link: 3.2rem;
+  --fs-logo: 3.2rem;
+  --fs-navBar-link: 1.6rem;
+  --fs-title: 3rem;
+  --fs-body: 1.6rem;
+  --fs-price: 4rem;
 }
 /* Font weight */
 :root {
   --fw-logo: 600;
   --fw-navBar-link: 400;
+  --fw-title: 600;
+  --fw-body: 400;
+  --fw-price: 400;
 }
