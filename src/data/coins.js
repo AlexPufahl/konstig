@@ -38,3 +38,7 @@ export const getFetch = new Promise(
         setTimeout(()=>{resolve(coinsData)},2000)
     }
 )
+
+export const getItem = new Promise (
+    (resolve) => {setTimeout(()=>{resolve(coinsData[0])},2000)}
+)

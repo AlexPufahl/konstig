@@ -12,6 +12,7 @@
   --fs-title: 3rem;
   --fs-body: 1.6rem;
   --fs-price: 4rem;
+  --fs-button: 2rem;
 }
 /* Font weight */
 :root {
@@ -20,4 +21,5 @@
   --fw-title: 600;
   --fw-body: 400;
   --fw-price: 400;
+  --fw-bold: 600;
 }

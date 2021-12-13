@@ -1,0 +1,16 @@
+.buyButton {
+  width: fit-content;
+  background: transparent;
+  border: 0.1rem solid var(--color-yellow);
+  border-radius: 1.5rem;
+}
+.buyButton_text {
+  margin: 10%;
+  text-align: center;
+  font-size: var(--fs-button);
+}
+.buyButton__span {
+  color: var(--color-yellow);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-bold);
+}

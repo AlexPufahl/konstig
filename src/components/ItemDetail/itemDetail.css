@@ -1,0 +1,28 @@
+.itemDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+.itemDetail__img {
+  width: 40%;
+}
+.itemDetail__body {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.itemDetail__title {
+  font-size: var(--fs-title);
+  margin: 10% 0;
+}
+.itemDetail__description {
+  font-size: var(--fs-body);
+  width: 50%;
+  margin: 2.5% 0;
+}
+.itemDetail__price {
+  color: var(--color-yellow);
+  font-size: var(--fs-price);
+  margin: 2% 0;
+}

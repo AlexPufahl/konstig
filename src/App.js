@@ -1,15 +1,15 @@
 import Navbar from './components/Navbar/navBar';
 import ItemListContainer from './components/ItemListContainer/itemListContainer';
 import ItemCount from './components/ItemCount/itemCount';
+import ItemDetailContainer from './components/ItemDetailContainer/itemDetailContainer';
 
 function App () {
-    const itemStock = 10;
-    const initialValue =  1;
     return (
         <>
             <Navbar />
             <ItemListContainer/>
-            <ItemCount stock={itemStock} initial={initialValue} />
+            <hr />
+            <ItemDetailContainer/>
         </>
     )
 }
