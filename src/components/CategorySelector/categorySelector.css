@@ -1,0 +1,27 @@
+.categorySelector {
+  display: flex;
+  width: 80%;
+  margin: 2.5% auto;
+  margin-top: 0;
+  align-items: baseline;
+}
+.categorySelector__title {
+  color: var(--color-black);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-body);
+}
+.categorySelector__list {
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+}
+.categorySelector__items {
+  list-style: none;
+  padding: 0 0.6rem;
+}
+.categorySelector__links {
+  color: var(--color-black);
+  font-size: var(--fs-navBar-link);
+  font-weight: var(--fw-copyright);
+  text-decoration: none;
+}

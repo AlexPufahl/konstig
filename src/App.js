@@ -1,16 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/navBar';
-import ItemListContainer from './components/ItemListContainer/itemListContainer';
-import ItemCount from './components/ItemCount/itemCount';
 import ItemDetailContainer from './components/ItemDetailContainer/itemDetailContainer';
+import Home from './pages/home/home';
+import AboutUs from './pages/aboutUs/aboutUs';
+import Shop from './pages/shop/shop';
+import Footer from './components/Footer/footer';
 
 function App () {
     return (
-        <>
+        <BrowserRouter>
             <Navbar />
-            <ItemListContainer/>
-            <hr />
-            <ItemDetailContainer/>
-        </>
+            <Routes>
+                <Route exact path='/' element={<Home/>}></Route>
+                <Route exact path='/shop' element={<Shop/>}></Route>
+                <Route exact path='/category/:coinCategories' element={<Shop/>}></Route>                
+                <Route exact path='/detail/:coinDetail' element={<ItemDetailContainer/>}></Route>                
+                <Route exact path='/aboutUs' element={<AboutUs/>}></Route>
+            </Routes>
+            <Footer />
+        </BrowserRouter>
     )
 }
 

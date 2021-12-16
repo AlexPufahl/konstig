@@ -1,3 +1,5 @@
+
+import DetailButton from "../DetailButton/DetailButton";
 import "./item.css";
 
 function Item ({itemId, coinName, pictureUrl, price, description}) {
@@ -7,6 +9,7 @@ function Item ({itemId, coinName, pictureUrl, price, description}) {
             <h2 className="item__title">{coinName}</h2>
             <p className="item__description">{description}</p>
             <h3 className="item__price">{price}</h3>
+            <DetailButton coinName={coinName} itemId={itemId}/>
         </div>
     )
 }

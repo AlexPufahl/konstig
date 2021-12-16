@@ -1,8 +1,8 @@
 /* Navbar */
 .navBar {
   display: flex;
-  margin-left: 6%;
-  margin-top: 8rem;
+  width: 80%;
+  margin: 2.5rem auto;
 }
 /* Logo */
 .navBar__logo {
@@ -12,8 +12,11 @@
   text-decoration: none;
 }
 /* Logo active */
-.navBar__logo:active {
+.navBar__logo-active {
   color: var(--color-yellow);
+  font-size: var(--fs-logo);
+  font-weight: var(--fw-logo);
+  text-decoration: none;
 }
 /* List */
 .navBar__list {
@@ -37,6 +40,7 @@
   color: var(--color-gray);
 }
 /* Links active */
-.navBar__links:active {
+navBar__links,
+.active {
   color: var(--color-yellow);
 }

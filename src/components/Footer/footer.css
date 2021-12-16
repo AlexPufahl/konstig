@@ -1,0 +1,41 @@
+.footer__spacer {
+  width: 80%;
+  margin: 2.5% auto;
+  margin-top: 8%;
+  background-color: var(--color-black);
+}
+.footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5% auto;
+}
+.footer__logo {
+  color: var(--color-black);
+  font-size: var(--fs-logo);
+  font-weight: var(--fw-logo);
+  text-decoration: none;
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+}
+.footer__items {
+  list-style: none;
+  padding: 0 1.6rem;
+}
+.footer__links {
+  color: var(--color-black);
+  font-size: var(--fs-navBar-link);
+  font-weight: var(--fw-navBar-link);
+  text-decoration: none;
+}
+.footer_copyright {
+  color: var(--color-black);
+  font-size: var(--fs-navBar-link);
+  font-weight: var(--fw-copyright);
+}
+footer__links,
+.active {
+  color: var(--color-yellow);
+}
