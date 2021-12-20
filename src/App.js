@@ -5,6 +5,7 @@ import Home from './pages/home/home';
 import AboutUs from './pages/aboutUs/aboutUs';
 import Shop from './pages/shop/shop';
 import Footer from './components/Footer/footer';
+import Cart from './pages/cart/cart';
 
 function App () {
     return (
@@ -16,6 +17,7 @@ function App () {
                 <Route exact path='/category/:coinCategories' element={<Shop/>}></Route>                
                 <Route exact path='/detail/:coinDetail' element={<ItemDetailContainer/>}></Route>                
                 <Route exact path='/aboutUs' element={<AboutUs/>}></Route>
+                <Route exact path='/cart' element={<Cart/>}></Route>
             </Routes>
             <Footer />
         </BrowserRouter>

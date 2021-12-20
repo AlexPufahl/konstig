@@ -1,0 +1,17 @@
+.cartButton {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-bold);
+  width: fit-content;
+  padding: 1.5rem;
+  border: 0.1rem solid var(--color-green);
+  border-radius: 1.5rem;
+}
+.cartButton__colored {
+  color: var(--color-green);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-bold);
+}
