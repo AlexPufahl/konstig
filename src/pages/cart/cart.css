@@ -1,0 +1,23 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+.cart__title {
+  color: var(--color-black);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-title);
+}
+.cart__buttonClean {
+  font-size: var(--fs-button);
+  font-weight: var(--fw-button);
+  width: fit-content;
+  background: transparent;
+  border: 0.1rem solid var(--color-yellow);
+  border-radius: 1.5rem;
+  text-decoration: none;
+  padding: 1%;
+  margin-top: 5%;
+}
