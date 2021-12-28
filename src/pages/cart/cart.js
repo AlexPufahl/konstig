@@ -1,15 +1,17 @@
 import './cart.css'
-import CartItem from '../../components/ItemCart/CartItem.js'
-import {useCartContext} from '../../context/cartContext.js'
+import CartDisplay from '../../components/CartDisplay/cartDisplay.js';
+import EmptyCart from '../../components/EmptyCart/emptyCart.js';
+import { useCartContext } from '../../context/cartContext';
+
 
 function Cart () {
-    const {cartList,clear} = useCartContext()
-    return (
-        <section className="cart">
-            {cartList.map(item => <CartItem coinName={item.coinName} quantity={item.quantity} />)}
-            <button className="cart__buttonClean" onClick={clear}>Empty cart</button>
-        </section>
-
+    let cartStatus = 0;
+    const {cartList} = useCartContext();
+    if (cartList.length === 0 ) { cartStatus = true} else { cartStatus = false}
+    return (    
+        <>
+        {(cartStatus ) ? <EmptyCart/> : <CartDisplay/>}      
+        </>    
     )
 }
 

@@ -1,0 +1,18 @@
+.emptyCart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 18% auto;
+}
+.emptyCart__title {
+  color: var(--color-black);
+  font-size: var(--fs-header);
+  font-weight: var(--fw-body);
+}
+.emptyCart__link {
+  color: var(--color-yellow);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-button);
+  text-decoration: none;
+}

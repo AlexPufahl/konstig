@@ -8,7 +8,7 @@
   border: 0.1rem solid var(--color-yellow);
   border-radius: 1.5rem;
   text-decoration: none;
-  flex-basis: 70%;
+  flex-basis: 100%;
 }
 .addToCart__colored {
   color: var(--color-yellow);

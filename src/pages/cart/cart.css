@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  margin-top: 15%;
   align-items: center;
 }
 .cart__title {
@@ -10,14 +11,15 @@
   font-size: var(--fs-title);
   font-weight: var(--fw-title);
 }
-.cart__buttonClean {
-  font-size: var(--fs-button);
-  font-weight: var(--fw-button);
-  width: fit-content;
-  background: transparent;
-  border: 0.1rem solid var(--color-yellow);
-  border-radius: 1.5rem;
-  text-decoration: none;
-  padding: 1%;
-  margin-top: 5%;
+.cart__totalPrice {
+  color: var(--color-black);
+  font-size: var(--fs-header);
+  font-weight: var(--fw-title);
+  width: 80%;
+  text-align: end;
+}
+.cart__totalPriceColored {
+  color: var(--color-yellow);
+  font-size: var(--fs-header);
+  font-weight: var(--fw-title);
 }

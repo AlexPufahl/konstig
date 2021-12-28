@@ -4,7 +4,11 @@
   flex-direction: row;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 0.2rem solid var(--color-yellow);
+}
+.cartItem__img {
+  width: 4%;
 }
 .cartItem__title {
   color: var(--color-black);
@@ -21,4 +25,24 @@
   font-size: var(--fs-title);
   font-weight: var(--fw-title);
   margin-left: 2rem;
+}
+.cartItem__price {
+  color: var(--color-black);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-button);
+}
+.cartItem__priceColored {
+  color: var(--color-yellow);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-title);
+  margin-left: 2rem;
+}
+.cartItem__delete {
+  color: var(--color-black);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-button);
+  background: transparent;
+  border: 0.1rem solid var(--color-yellow);
+  border-radius: 1.5rem;
+  padding: 1rem;
 }

@@ -1,5 +1,5 @@
 .itemStock__text {
   color: var(--color-black);
-  font-style: var(--fs-itemStock);
+  font-size: var(--fs-itemStock);
   font-weight: var(--fw-itemStock);
 }

@@ -12,7 +12,6 @@ const ItemDetail = ({item}) => {
     const {addItem} = useCartContext();
     
     const onAdd = (quantityToAdd) => {
-        console.log(quantityToAdd);
         setGoCart(false)
         addItem({...item, quantity:quantityToAdd})
     }

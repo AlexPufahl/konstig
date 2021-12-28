@@ -8,7 +8,7 @@ function Item ({itemId, coinName, pictureUrl, price, description}) {
             <img src={pictureUrl} alt="Coin image" className="item__img" />
             <h2 className="item__title">{coinName}</h2>
             <p className="item__description">{description}</p>
-            <h3 className="item__price">{price}</h3>
+            <h3 className="item__price">${price}</h3>
             <DetailButton coinName={coinName} itemId={itemId}/>
         </div>
     )

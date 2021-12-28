@@ -2,7 +2,19 @@
   display: flex;
   vertical-align: middle;
   margin-left: 3.2rem;
+  text-decoration: none;
 }
 .cart__image {
   width: var(--fs-navBar-link);
+}
+.cart__number {
+  color: var(--color-black);
+  font-size: var(--fs-navBar-link);
+  font-weight: var(--fw-navBar-link);
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.display-none {
+  display: none;
 }

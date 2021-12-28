@@ -17,12 +17,22 @@ function CartContextProvider ({children}) {
         }
     }
 
-	function clear() {
-		setCartList([])
-	}
+    function clear() {
+      setCartList([])
+    }
 
+    function getTotalCost (cartList) {
+        return cartList.reduce((totalCost, { price: itemCost, quantity: itemQuantity  }) => totalCost + parseFloat(itemCost * itemQuantity), 0);
+    };
+
+    function deleteItem(item) {
+      setCartList(cartList.filter(coin => coin !== item))
+    }
+
+    let getCartNumber = cartList.length
+    
     return (
-        <CartContext.Provider value={{cartList, addItem, clear}}>
+        <CartContext.Provider value={{cartList, addItem, clear, getTotalCost,deleteItem, getCartNumber}}>
             {children}
         </CartContext.Provider>
     )
