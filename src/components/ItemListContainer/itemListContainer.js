@@ -1,11 +1,12 @@
 import { useState } from 'react/cjs/react.development';
 import { useEffect } from 'react';
 import './itemListContainer.css';
-import {getFetch} from '../../data/coins.js';
 import Spinner from '../Spinner/spinner';
 import ItemList from '../ItemList/itemList';
 import { useParams } from 'react-router-dom';
 import CategorySelector from '../CategorySelector/categorySelector';
+import {collection, getDocs, getFirestore, query, where} from 'firebase/firestore'
+
 
 
 function ItemListContainer () {
@@ -14,19 +15,21 @@ function ItemListContainer () {
     const [loading,setLoading] = useState(true)
     useEffect(
         ()=> {
+            const dataBase = getFirestore()
             if (coinCategories) {
-                getFetch
-            .then(dataRes => setCoin(dataRes.filter(coin => coin.category === coinCategories)))
-            .catch(err => console.log(err))
-            .finally(()=> setLoading(false));
-            } else {
-                getFetch
-                .then(dataRes => setCoin(dataRes))
+                const q = query(collection(dataBase,'coins'),where('category','==', coinCategories))
+                getDocs(q)
+                .then(dataRes => setCoin(dataRes.docs.map((coin) => ({id:coin.id, ...coin.data()}))))
                 .catch(err => console.log(err))
-                .finally(()=> setLoading(false));           
+                .finally(()=> setLoading(false));
+            } else {
+                const itemListCollection = collection(dataBase,'coins');
+                getDocs(itemListCollection)
+                .then(dataRes => setCoin(dataRes.docs.map((coin) => ({id:coin.id, ...coin.data()}))))
+                .catch(err => console.log(err))
+                .finally(()=> setLoading(false));
             }
-        }, [coinCategories]
-    )
+        },[coinCategories]);
     return (
         <section className="itemListContainer">
             <CategorySelector/>
