@@ -7,6 +7,7 @@ import Shop from './pages/shop/shop';
 import Footer from './components/Footer/footer';
 import Cart from './pages/cart/cart';
 import CartContextProvider from './context/cartContext';
+import CheckOut from './components/CheckOut/checkOut';
 
 function App () {
     return (
@@ -20,6 +21,7 @@ function App () {
                     <Route exact path='/detail/:coinDetail' element={<ItemDetailContainer/>}></Route>                
                     <Route exact path='/aboutUs' element={<AboutUs/>}></Route>
                     <Route exact path='/cart' element={<Cart/>}></Route>
+                    <Route exact path='/checkOut' element={<CheckOut/>}></Route>
                 </Routes>
                 <Footer />
             </BrowserRouter>

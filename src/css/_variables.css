@@ -16,6 +16,7 @@
   --fs-button: 2rem;
   --fs-header: 6rem;
   --fs-itemStock: 2rem;
+  --fs-formlabel: 2.5rem;
 }
 /* Font weight */
 :root {
@@ -28,4 +29,5 @@
   --fw-copyright: 300;
   --fw-button: 400;
   --fw-itemStock: 300;
+  --fw-formlabel: 300;
 }

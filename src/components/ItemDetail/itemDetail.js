@@ -23,7 +23,7 @@ const ItemDetail = ({item}) => {
             <div className="itemDetail__body">
                 <h2 className="itemDetail__title">{coinName}</h2>
                 <p className="itemDetail__description">{description}</p>
-                <h3 className="itemDetail__price">{price}</h3>
+                <h3 className="itemDetail__price">${price}</h3>
                 {goCart ? <ItemCount stock={stock} initial={initialValue} onAdd={onAdd} /> : <CartButton/>}
             </div>
         </div>

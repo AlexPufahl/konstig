@@ -1,7 +1,7 @@
-import './CartItem.css'
+import './checkOutCart.css'
 import TrashIcon from '../../assets/Trash.svg'
 
-function CartItem ({coinName, quantity,pictureUrl,deleteItem,id,price}) {
+function CheckOutCart ({coinName, quantity,pictureUrl,deleteItem,id,price}) {
     return (
         <div className='cartItem'>
             <img src={pictureUrl} alt="Coin image" className="cartItem__img" />
@@ -15,4 +15,4 @@ function CartItem ({coinName, quantity,pictureUrl,deleteItem,id,price}) {
     )
 }
 
-export default CartItem;
+export default CheckOutCart;

@@ -1,0 +1,121 @@
+.checkOut {
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkOut__formContainer {
+  width: 60%;
+  margin: auto 0;
+}
+
+.formContainer__title {
+  color: var(--color-black);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-title);
+}
+
+.formContainer__form {
+  margin-top: 6%;
+}
+
+.form__name,
+.form__email,
+.form__phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.name__input,
+.email__input,
+.phone__input {
+  color: var(--color-black);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+  min-width: 35%;
+  max-width: 80%;
+  height: 2rem;
+  border: 0;
+  border-bottom: solid 0.0125rem var(--color-gray);
+  padding-left: 2%;
+}
+
+.name__input:focus,
+.name__input:focus-visible,
+.email__input:focus,
+.email__input:focus-visible,
+.phone__input:focus,
+.phone__input:focus-visible {
+  outline: none;
+  border-bottom: solid 0.0125rem var(--color-gray);
+}
+
+.name__label,
+.email__label,
+.phone__label {
+  width: 36%;
+  color: var(--color-yellow);
+  font-size: var(--fs-formlabel);
+  font-weight: var(--fw-formlabel);
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.formContainer__btn {
+  color: var(--color-black);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-button);
+  width: fit-content;
+  background: transparent;
+  border: 0.1rem solid var(--color-yellow);
+  border-radius: 1.5rem;
+  padding: 1%;
+  margin-top: 6%;
+}
+
+.cart__total {
+  color: var(--color-black);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-button);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.cart__title {
+  color: var(--color-black);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-title);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.checkOutOrderDispaly {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkOutOrderDisplay__title {
+  color: var(--color-black);
+  font-size: var(--fs-header);
+  font-weight: var(--fw-title);
+}
+
+.checkOutOrderDisplay__refNum {
+  color: var(--color-black);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-body);
+}
+
+.refNum__colored {
+  color: var(--color-yellow);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-body);
+}
