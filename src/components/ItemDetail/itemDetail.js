@@ -26,7 +26,7 @@ const ItemDetail = ({item}) => {
                 <Link className='breadcrumbs__link' to={'/shop'}>Shop</Link>
             </div>
             <div className="itemDetail" key={id}>
-                <img src={pictureUrl} alt="Coin image" className="itemDetail__img" />
+                <img src={pictureUrl} alt={coinName} className="itemDetail__img" />
                 <div className="itemDetail__body">
                     <h2 className="itemDetail__title">{coinName}</h2>
                     <p className="itemDetail__description">{description}</p>

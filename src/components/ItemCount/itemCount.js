@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useCounter } from "../../customHooks/useCounter";
 import AddToCart from "../AddToCart/addToCart";
 import ItemStock from "../ItemStock/itemStock";

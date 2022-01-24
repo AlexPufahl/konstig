@@ -24,7 +24,7 @@ function CheckOut () {
         <section className="checkOut">
             <div className="checkOut__formContainer">
                 <h1 className="formContainer__title">Let's finish with your contact data</h1>
-                <form  className="formContainer__form" onSubmit={submitForm} onChange={handleFormDataChange} autocomplete="off">
+                <form className="formContainer__form" onSubmit={submitForm} onChange={handleFormDataChange}>
                     <div className="form__name">
                         <label htmlFor="name" className='name__label'>Full name</label>
                         <input type="text" className="name__input" name='name' value={formData.name} required/>
@@ -45,7 +45,7 @@ function CheckOut () {
                         <input type="tel" className="phone__input" name='phone' value={formData.phone} required/>
                         {errors.phone && <h3 className="input__error">{errors.phone}</h3>}
                     </div>
-                    <button className={(Object.keys(errors).length == 0) ? "formContainer__btn" : "d-none"}>→</button>
+                    <button className={(Object.keys(errors).length === 0) ? "formContainer__btn" : "d-none"}>→</button>
                 </form>
             </div>
             <div className="checkOut__cart">
