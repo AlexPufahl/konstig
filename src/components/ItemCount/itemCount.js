@@ -12,7 +12,7 @@ function ItemCount ({stock, initial,onAdd}) {
             <h2 className="itemCount__quantity">{counter}</h2>
             <button className="itemCount__increment" onClick={increment}>+</button>
             <ItemStock stock={stock}/>
-            <AddToCart onAdd={onAdd} counter={counter} />
+            <AddToCart onAdd={onAdd} counter={counter} stock={stock}/>
         </div>
     )
 };

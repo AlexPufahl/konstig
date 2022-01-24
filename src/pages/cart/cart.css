@@ -23,3 +23,11 @@
   font-size: var(--fs-header);
   font-weight: var(--fw-title);
 }
+
+/* Responsive */
+
+@media only screen and (max-width: 820px) {
+  .cart {
+    height: 80%;
+  }
+}

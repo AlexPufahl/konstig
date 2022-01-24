@@ -1,0 +1,11 @@
+.itemsTableContainer {
+  width: 80%;
+  margin: 14% auto;
+}
+.itemsTableContainer__title {
+  color: var(--color-black);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-title);
+  margin-left: 10%;
+  margin-bottom: 4%;
+}

@@ -1,7 +1,9 @@
+.footer__container {
+  margin-top: 4rem;
+}
 .footer__spacer {
   width: 80%;
   margin: 2.5% auto;
-  margin-top: 8%;
   background-color: var(--color-black);
 }
 .footer {

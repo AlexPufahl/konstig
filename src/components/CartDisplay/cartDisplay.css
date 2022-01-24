@@ -1,8 +1,8 @@
 .cart__buttons {
   display: flex;
-  width: 50%;
+  width: 80%;
   margin: auto 0;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 .cart__buttonClean {
   font-size: var(--fs-button);
@@ -26,4 +26,5 @@
   text-decoration: none;
   padding: 2%;
   margin-top: 5%;
+  margin-left: 2%;
 }

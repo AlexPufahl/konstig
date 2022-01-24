@@ -3,7 +3,7 @@ import './footer.css';
 
 function Footer () {
     return (
-        <>
+        <div className='footer__container'>
             <hr className="footer__spacer"></hr>
             <footer className="footer">
                 {/* Logo */}
@@ -18,7 +18,7 @@ function Footer () {
                 {/*Copyright*/}
                 <h2 className='footer_copyright'>© Copyright 2021 Konstig</h2>
             </footer>
-        </>
+        </div>
     )
 }
 

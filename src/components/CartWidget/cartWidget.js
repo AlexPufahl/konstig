@@ -7,9 +7,9 @@ import {useCartContext} from '../../context/cartContext.js'
 function CartWidget () {
     const {getCartNumber} = useCartContext();
     return (
-        <Link to={'/cart'} className={(getCartNumber === 0) ? "display-none" : "cart__link"}>
+        <Link to={'/cart'} className="cart__link">
             <img src={CartIcon} alt="Cart icon" className="cart__image" />
-            <h2 className="cart__number">{getCartNumber}</h2>
+            <h2 className={(getCartNumber !== 0) ?"cart__number" : "display-none"}>{getCartNumber}</h2>
         </Link>
     )
 }

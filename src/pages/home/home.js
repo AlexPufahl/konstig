@@ -1,6 +1,7 @@
 import './home.css'
 import FirstIllustration from '../../assets/Home/FirstIllustration.svg'
 import SecondIllustration from '../../assets/Home/SecondIllustration.svg'
+import ItemsTableContainer from '../../components/ItemsTableContainer/itemsTableContainer';
 
 function Home () {
     return(
@@ -11,6 +12,7 @@ function Home () {
                 </div>
                 <img className='firstSection__firstIllustration' src={FirstIllustration} alt="Abstract illustration" />
             </div>
+            <ItemsTableContainer/>
             <div className="home__secondSection">
                 <img className='secondSection__secondIllustration' src={SecondIllustration} alt="Abstract illustration" />
                 <div className="secondSection__textContainer">

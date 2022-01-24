@@ -1,8 +1,6 @@
 import { doc, writeBatch } from "firebase/firestore";
 
-function UpdateStock(order,db,cartList) {
-    console.log('Update stock start')
-    
+function UpdateStock(order,db,cartList) {    
     const batch = writeBatch(db);
     
     order.items.map(e => {
@@ -15,7 +13,6 @@ function UpdateStock(order,db,cartList) {
     })
 
     batch.commit()
-    console.log('Update stock end');  
 }
 
 export default UpdateStock;

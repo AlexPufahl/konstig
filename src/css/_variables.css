@@ -5,6 +5,7 @@
   --color-gray: #636363;
   --color-yellow: #fecf8d;
   --color-green: #90ee90;
+  --color-red: #ff4646;
 }
 /* Font size */
 :root {
@@ -13,7 +14,7 @@
   --fs-title: 3rem;
   --fs-body: 1.6rem;
   --fs-price: 4rem;
-  --fs-button: 2rem;
+  --fs-button: 1.2rem;
   --fs-header: 6rem;
   --fs-itemStock: 2rem;
   --fs-formlabel: 2.5rem;

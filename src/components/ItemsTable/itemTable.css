@@ -1,0 +1,36 @@
+.ItemTable {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid var(--color-yellow);
+  padding-bottom: 0.5%;
+}
+.itemTable__coinInfo {
+  display: flex;
+  margin-top: 0.5%;
+}
+
+.itemTable__img {
+  width: 20%;
+  margin-right: 12%;
+}
+
+.itemTable__name {
+  color: var(--color-black);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+}
+
+.itemTable__lastPrice {
+  color: var(--color-black);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+}
+
+.itemTable__lastPriceColored {
+  margin-top: 0.5%;
+  color: var(--color-yellow);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+}

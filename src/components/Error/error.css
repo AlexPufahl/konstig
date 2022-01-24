@@ -1,0 +1,29 @@
+.error {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error__img {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.error__text {
+  color: var(--color-yellow);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-title);
+  margin-top: 2%;
+  margin: 0;
+}
+
+.error__redirect {
+  color: var(--color-black);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-button);
+  text-decoration: none;
+  margin-top: 2%;
+  border-bottom: 0.1rem var(--color-yellow) solid;
+}
