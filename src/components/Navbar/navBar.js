@@ -1,7 +1,7 @@
-import { Link, NavLink } from 'react-router-dom';
 import '../../css/_resets.css';
 import '../../css/_variables.css';
 import './navBar.css';
+import { Link, NavLink } from 'react-router-dom';
 import CartWidget from '../CartWidget/cartWidget';
 
 

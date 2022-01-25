@@ -1,8 +1,7 @@
-import { collection, getDocs, getFirestore } from 'firebase/firestore';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import ItemTable from '../ItemsTable/itemsTable';
 import './itemsTableContainer.css'
+import { collection, getDocs, getFirestore } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
+import ItemTable from '../ItemsTable/itemsTable';
 import Spinner from '../Spinner/spinner.js'
 
 function ItemsTableContainer (){
