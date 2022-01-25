@@ -6,7 +6,7 @@
 
 ## Features
 
-- Content management capabilities
+- Items management capabilities
 - An easy-to-use checkout
 - Interactive platform
 
